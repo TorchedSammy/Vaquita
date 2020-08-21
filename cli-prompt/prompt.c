@@ -2,8 +2,11 @@
 #include <stdlib.h>
 
 int main() {
+	char text[50];
     printf("> ");
-    getchar();
+
+    fgets(text, 50, stdin);
+    printf("input: %s\n", text);
 
     return 0;
 }
