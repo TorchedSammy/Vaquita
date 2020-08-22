@@ -7,11 +7,7 @@
 #include "spinner.h"
 
 int main() {
-	char lol[4];
-	lol[0] = 'l';
-	lol[1] = 'o';
-	lol[2] = 'l';
-	lol[3] = '\0';
+	char* lol = "lol\0";
 
 	int i;
 	for (;;) {
