@@ -9,15 +9,14 @@
 int main() {
 	char* lol = "lol\0";
 
-	int i;
-	for (;;) {
+	int i = 1;
+	while (i++) {
 		#ifdef _WIN32
 		Sleep(80);
 		#else
 		nanosleep(80*1000);
 		#endif
 		next_frame(lol, i % 4);
-		i++;
 	}
 
 	return 0;
